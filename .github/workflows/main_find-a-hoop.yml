@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - find-a-hoop-fe
+name: Build and deploy Node.js app to Azure Web App - find-a-hoop
 
 on:
   push:
@@ -50,7 +50,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'find-a-hoop-fe'
+          app-name: 'find-a-hoop'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_440647A6EF1D4443AE9BC54A2CF3C0FB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CCA248D787B54D889C7AA1E09ABE8413 }}
           package: .
